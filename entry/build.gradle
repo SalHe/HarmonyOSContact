@@ -13,6 +13,9 @@ ohos {
             }
         }
     }
+    compileOptions{
+        annotationEnabled true
+    }
     
 }
 
