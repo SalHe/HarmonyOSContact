@@ -38,7 +38,7 @@ public class ExampleOhosTest extends AbilitySlice {
 
         Contact contact = new Contact();
         contact.setName("SalHe");
-        contact.setCompany("Wuhan Unversity");
+//        contact.setCompany("Wuhan Unversity");
         contact.setNumber("13811112222");
         contact.setEmail("SalHe@qq.com");
         ormContext.insert(contact);

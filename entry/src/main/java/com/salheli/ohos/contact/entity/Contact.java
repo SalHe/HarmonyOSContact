@@ -14,9 +14,28 @@ public class Contact extends OrmObject {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String name;
-    private String company;
     private String number;
     private String email;
+    private String address;
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", number='" + number + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public int getId() {
         return id;
@@ -32,14 +51,6 @@ public class Contact extends OrmObject {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
     }
 
     public String getNumber() {
